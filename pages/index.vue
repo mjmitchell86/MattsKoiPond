@@ -1,26 +1,17 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md8>
+  <v-layout justify-center align-center>
+    <v-flex>
       <v-card>
         <v-card-title class="headline">Matt's Pond</v-card-title>
         <v-card-text>
-          <div class="resp-container">
+          <div class="iframe-container">
             <iframe
-              class="resp-iframe"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              gesture="media"
-              allow="encrypted-media"
+              type="text/html"
+              frameborder="0"
+              src="//video.nest.com/embedded/live/3bCNu0yep2?autoplay=1"
               allowfullscreen
             ></iframe>
           </div>
-          <!-- <iframe
-            type="text/html"
-            frameborder="0"
-            width="720"
-            height="591"
-            src="//video.nest.com/embedded/live/3bCNu0yep2?autoplay=1"
-            allowfullscreen
-          ></iframe>-->
         </v-card-text>
       </v-card>
     </v-flex>
@@ -35,17 +26,18 @@ export default {};
 </script>
 
 <style scoped>
-.resp-container {
-  position: relative;
+.iframe-container {
   overflow: hidden;
   padding-top: 56.25%;
+  position: relative;
 }
-.resp-iframe {
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  border: 0;
 }
 </style>
