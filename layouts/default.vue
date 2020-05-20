@@ -30,7 +30,7 @@
       </v-btn>-->
     </v-app-bar>
     <v-content>
-      <v-container>
+      <v-container class="background" :style="{ backgroundImage: `url(${backgroundUrl})` }">
         <nuxt />
       </v-container>
     </v-content>
@@ -51,9 +51,11 @@
 </template>
 
 <script>
+import backgroundUrl from "~/static/koi-fish-1.jpg";
 export default {
   data() {
     return {
+      backgroundUrl: backgroundUrl,
       clipped: false,
       drawer: false,
       fixed: false,
