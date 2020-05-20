@@ -4,13 +4,26 @@
       <v-card>
         <v-card-title class="headline">Matt's Pond</v-card-title>
         <v-card-text>
-          <div class="iframe-container">
+          <div
+            class="iframe-container"
+            v-if="$moment().tz('America/New_York').isBetween(
+              $moment().set({
+              hour: 8
+              }),
+              $moment().set({
+              hour: 20
+              }))"
+          >
             <iframe
               type="text/html"
               frameborder="0"
               src="//video.nest.com/embedded/live/LnyOZCfOGJ?autoplay=1"
               allowfullscreen
             ></iframe>
+          </div>
+          <div v-else>
+            <h3>Sorry, this stream is currently offline.</h3>
+            <h4>Running hours are 8am - 8pm EST</h4>
           </div>
         </v-card-text>
       </v-card>
@@ -19,9 +32,7 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-import VuetifyLogo from "~/components/VuetifyLogo.vue";
-
+// import { moment } from "@nuxtjs/moment";
 export default {};
 </script>
 
