@@ -4,7 +4,16 @@
       <v-card>
         <v-card-title class="headline">Matt's Pond</v-card-title>
         <v-card-text>
-          <div class="iframe-container" v-if="checkTime()">
+          <div
+            class="iframe-container"
+            v-if="$moment().tz('America/New_York').isBetween(
+              $moment().set({
+              hour: 8
+              }),
+              $moment().set({
+              hour: 20
+              }))"
+          >
             <iframe
               type="text/html"
               frameborder="0"
@@ -13,7 +22,8 @@
             ></iframe>
           </div>
           <div v-else>
-            <h3>Sorry, this stream is currently offline. Check back soon!</h3>
+            <h3>Sorry, this stream is currently offline.</h3>
+            <h4>Running hours are 8am - 8pm EST</h4>
           </div>
         </v-card-text>
       </v-card>
@@ -22,13 +32,8 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    checkTime() {
-      return true;
-    }
-  }
-};
+// import { moment } from "@nuxtjs/moment";
+export default {};
 </script>
 
 <style scoped>

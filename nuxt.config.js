@@ -46,10 +46,18 @@ export default {
    */
   buildModules: [
     '@nuxtjs/vuetify',
+    '@nuxtjs/moment',
     ['@nuxtjs/google-analytics', {
       id: 'UA-167223052-1'
     }]
   ],
+  /*
+   ** Enable Timezone
+   */
+  moment: {
+    timezone: true,
+    // plugin: false
+  },
   /*
    ** Nuxt.js modules
    */
