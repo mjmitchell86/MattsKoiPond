@@ -12,19 +12,7 @@
             src="//video.nest.com/embedded/live/3bCNu0yep2?autoplay=1"
             allowfullscreen
           ></iframe>
-          <!-- <iframe
-            type="text/html"
-            frameborder="0"
-            width="480"
-            height="394"
-            src="//video.nest.com/embedded/live/3bCNu0yep2?autoplay=1"
-            allowfullscreen
-          ></iframe>-->
         </v-card-text>
-        <!-- <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire">Continue</v-btn>
-        </v-card-actions>-->
       </v-card>
     </v-flex>
   </v-layout>
@@ -34,10 +22,5 @@
 import Logo from "~/components/Logo.vue";
 import VuetifyLogo from "~/components/VuetifyLogo.vue";
 
-export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
-};
+export default {};
 </script>
