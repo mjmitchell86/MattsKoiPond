@@ -4,13 +4,16 @@
       <v-card>
         <v-card-title class="headline">Matt's Pond</v-card-title>
         <v-card-text>
-          <div class="iframe-container">
+          <div class="iframe-container" v-if="checkTime()">
             <iframe
               type="text/html"
               frameborder="0"
               src="//video.nest.com/embedded/live/LnyOZCfOGJ?autoplay=1"
               allowfullscreen
             ></iframe>
+          </div>
+          <div v-else>
+            <h3>Sorry, this stream is currently offline. Check back soon!</h3>
           </div>
         </v-card-text>
       </v-card>
@@ -19,10 +22,13 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-import VuetifyLogo from "~/components/VuetifyLogo.vue";
-
-export default {};
+export default {
+  methods: {
+    checkTime() {
+      return true;
+    }
+  }
+};
 </script>
 
 <style scoped>
