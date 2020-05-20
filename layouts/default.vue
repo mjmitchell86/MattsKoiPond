@@ -49,7 +49,7 @@ export default {
         //   to: "/inspire"
         // }
       ],
-      title: "Welcome to Matt's Koi Stream"
+      title: "Welcome to Matt's Koi Streams"
     };
   }
 };
