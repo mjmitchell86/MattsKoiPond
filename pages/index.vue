@@ -11,7 +11,7 @@
               hour: 8
               }),
               $moment().set({
-              hour: 20
+              hour: 21
               }))"
           >
             <iframe
@@ -23,7 +23,7 @@
           </div>
           <div v-else>
             <h3>Sorry, this stream is currently offline.</h3>
-            <h4>Running hours are 8am - 8pm EST</h4>
+            <h4>Running hours are 8am - 9pm EST</h4>
           </div>
         </v-card-text>
       </v-card>
