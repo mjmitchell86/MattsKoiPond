@@ -8,10 +8,11 @@
             class="iframe-container"
             v-if="$moment().tz('America/New_York').isBetween(
               $moment().set({
-              hour: 8
+              hour: 9
               }),
               $moment().set({
-              hour: 21
+              hour: 20,
+              minute: 59
               }))"
           >
             <iframe
@@ -23,7 +24,8 @@
           </div>
           <div v-else>
             <h3>Sorry, this stream is currently offline.</h3>
-            <h4>Running hours are 8am - 9pm EST</h4>
+            <h4>Running hours are 9am - 9pm EST</h4>
+            <h4>Thanks for tuning in. Try again tomorrow!!!</h4>
           </div>
         </v-card-text>
       </v-card>
