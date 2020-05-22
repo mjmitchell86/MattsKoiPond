@@ -8,7 +8,8 @@
             class="iframe-container"
             v-if="$moment().tz('America/New_York').isBetween(
               $moment().set({
-              hour: 9
+              hour: 8
+              minute: 59
               }),
               $moment().set({
               hour: 20,
