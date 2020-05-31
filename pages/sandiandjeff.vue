@@ -2,7 +2,7 @@
   <v-layout justify-center align-center>
     <v-flex>
       <v-card>
-        <v-card-title class="headline">Sandi's Pond</v-card-title>
+        <v-card-title class="headline">Sandi and Jeff's Pond</v-card-title>
         <v-card-text>
           <div
             class="iframe-container"

@@ -39,9 +39,14 @@ export default {
       fixed: false,
       items: [
         {
-          icon: "mdi-apps",
+          icon: "mdi-waves",
           title: "Matt's Pond",
           to: "/"
+        },
+        {
+          icon: "mdi-waves",
+          title: "Sandi and Jeff's Pond",
+          to: "/sandiandjeff"
         }
         // {
         //   icon: "mdi-chart-bubble",
@@ -49,7 +54,7 @@ export default {
         //   to: "/inspire"
         // }
       ],
-      title: "Welcome to Matt's Koi Streams"
+      title: "Welcome to Matt's Collection of Koi Streams"
     };
   }
 };
