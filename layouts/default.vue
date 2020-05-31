@@ -39,12 +39,12 @@ export default {
       fixed: false,
       items: [
         {
-          icon: "mdi-waves",
+          icon: "mdi-fish",
           title: "Matt's Pond",
           to: "/"
         },
         {
-          icon: "mdi-waves",
+          icon: "mdi-fish",
           title: "Sandi and Jeff's Pond",
           to: "/sandiandjeff"
         }
