@@ -2,7 +2,12 @@
   <v-layout justify-center align-center>
     <v-flex>
       <v-card>
-        <v-card-title class="headline">Sandi and Jeff's Pond</v-card-title>
+        <v-card-title class="headline">
+          Sandi and Jeff's Pond
+          <v-layout justify-end>
+            <h5 style="font-weight: lighter">Available from 9am - 9pm EST</h5>
+          </v-layout>
+        </v-card-title>
         <v-card-text>
           <div
             class="iframe-container"

@@ -2,7 +2,15 @@
   <v-layout justify-center align-center>
     <v-flex>
       <v-card>
-        <v-card-title class="headline">Matt's Pond</v-card-title>
+        <v-card-title class="headline">
+          Matt's Pond
+          <v-layout justify-end>
+            <v-tooltip top>
+              <h5 slot="activator" style="font-weight: lighter">Available from 9am - 11pm EST</h5>
+              <span>New Summer Hours!</span>
+            </v-tooltip>
+          </v-layout>
+        </v-card-title>
         <v-card-text>
           <div
             class="iframe-container"
@@ -12,7 +20,7 @@
               minute: 59
               }),
               $moment().set({
-              hour: 20,
+              hour: 22,
               minute: 59
               }))"
           >
@@ -35,7 +43,6 @@
 </template>
 
 <script>
-// import { moment } from "@nuxtjs/moment";
 export default {};
 </script>
 

@@ -48,11 +48,6 @@ export default {
           title: "Sandi and Jeff's Pond",
           to: "/sandiandjeff"
         }
-        // {
-        //   icon: "mdi-chart-bubble",
-        //   title: "Inspire",
-        //   to: "/inspire"
-        // }
       ],
       title: "Welcome to Matt's Collection of Koi Streams"
     };

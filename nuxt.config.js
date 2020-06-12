@@ -6,8 +6,8 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    titleTemplate: 'Matt\'s Koi Streams',
+    title: 'Matt\'s Koi Streams',
     meta: [{
         charset: 'utf-8'
       },
@@ -18,7 +18,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'Koi Pond Video Streams'
       }
     ],
     link: [{
@@ -56,7 +56,6 @@ export default {
    */
   moment: {
     timezone: true,
-    // plugin: false
   },
   /*
    ** Nuxt.js modules
