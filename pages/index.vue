@@ -33,8 +33,7 @@
           </div>
           <div v-else>
             <h3>Sorry, this stream is currently offline.</h3>
-            <h4>Running hours are 9am - 9pm EST</h4>
-            <h4>Thanks for tuning in. Try again tomorrow!!!</h4>
+            <h4>Thanks for tuning in. Please come back!</h4>
           </div>
         </v-card-text>
       </v-card>
