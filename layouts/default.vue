@@ -7,8 +7,7 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-if="!isMobile()" v-text="item.title" />
-            <v-list-item-title v-else v-text="item.altTitle" />
+            <v-list-item-title v-text="item.title" />
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -64,8 +63,8 @@ export default {
           to: "/sandiandjeff"
         }
       ],
-      title: "Welcome to Matt's Collection of Koi Streams",
-      altTitle: "Welcome"
+      title: "Welcome To Matt's Collection Of Koi Streams",
+      altTitle: "Welcome To My Koi Streams"
     };
   }
 };
