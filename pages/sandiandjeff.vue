@@ -5,7 +5,7 @@
         <v-card-title class="headline">
           Sandi and Jeff's Pond
           <v-layout justify-end>
-            <h5 style="font-weight: lighter">Available from 9am - 9pm EST</h5>
+            <h5 style="font-weight: lighter">Available from 9am - 11pm EST</h5>
           </v-layout>
         </v-card-title>
         <v-card-text>
@@ -17,7 +17,7 @@
               minute: 59
               }),
               $moment().set({
-              hour: 20,
+              hour: 22,
               minute: 59
               }))"
           >
