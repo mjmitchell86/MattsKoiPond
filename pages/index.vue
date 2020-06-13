@@ -4,9 +4,15 @@
       <v-card>
         <v-card-title class="headline">
           Matt's Pond
-          <v-layout justify-end>
+          <v-layout justify-end v-if="!isMobile()">
             <v-tooltip top>
               <h5 slot="activator" style="font-weight: lighter">Available from 9am - 11pm EST</h5>
+              <span>New Summer Hours!</span>
+            </v-tooltip>
+          </v-layout>
+          <v-layout justify-end v-else>
+            <v-tooltip top>
+              <h5 slot="activator" style="font-weight: lighter">9a - 11p EST</h5>
               <span>New Summer Hours!</span>
             </v-tooltip>
           </v-layout>
@@ -42,7 +48,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    isMobile() {
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+};
 </script>
 
 <style scoped>
