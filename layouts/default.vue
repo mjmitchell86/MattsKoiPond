@@ -7,14 +7,16 @@
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
+            <v-list-item-title v-if="!isMobile()" v-text="item.title" />
+            <v-list-item-title v-else v-text="item.altTitle" />
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title v-if="!isMobile()" v-text="title" />
+      <v-toolbar-title v-else v-text="altTitle" />
       <v-spacer />
     </v-app-bar>
     <v-content class="background" :style="{ backgroundImage: `url(${backgroundUrl})` }">
@@ -31,6 +33,19 @@
 <script>
 import backgroundUrl from "~/static/koi-fish-1.jpg";
 export default {
+  methods: {
+    isMobile() {
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  },
   data() {
     return {
       backgroundUrl: backgroundUrl,
@@ -49,7 +64,8 @@ export default {
           to: "/sandiandjeff"
         }
       ],
-      title: "Welcome to Matt's Collection of Koi Streams"
+      title: "Welcome to Matt's Collection of Koi Streams",
+      altTitle: "Welcome"
     };
   }
 };
