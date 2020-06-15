@@ -18,7 +18,7 @@
       <v-toolbar-title v-else v-text="altTitle" />
       <v-spacer />
     </v-app-bar>
-    <v-content class="background" :style="{ backgroundImage: `url(${backgroundUrl})` }">
+    <v-content class="background" :style="{ backgroundImage: `url(${backgroundUrl})`}">
       <v-container>
         <nuxt />
       </v-container>
