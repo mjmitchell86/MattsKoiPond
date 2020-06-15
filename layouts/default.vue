@@ -18,7 +18,10 @@
       <v-toolbar-title v-else v-text="altTitle" />
       <v-spacer />
     </v-app-bar>
-    <v-content class="background" :style="{ backgroundImage: `url(${backgroundUrl})`}">
+    <v-content
+      class="background background-image"
+      :style="{ backgroundImage: `url(${backgroundUrl})`}"
+    >
       <v-container>
         <nuxt />
       </v-container>
@@ -28,6 +31,13 @@
     </v-footer>
   </v-app>
 </template>
+
+<style scoped>
+.background-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
 
 <script>
 import backgroundUrl from "~/static/koi-fish-1.jpg";
