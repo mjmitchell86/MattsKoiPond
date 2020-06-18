@@ -6,13 +6,13 @@
           Matt's Pond
           <v-layout justify-end v-if="!isMobile()">
             <v-tooltip top>
-              <h5 slot="activator" style="font-weight: lighter">Available from 9am - 11pm EST</h5>
+              <h5 slot="activator" style="font-weight: lighter">Available from 8am - 11pm EST</h5>
               <span>New Summer Hours!</span>
             </v-tooltip>
           </v-layout>
           <v-layout justify-end v-else>
             <v-tooltip top>
-              <h5 slot="activator" style="font-weight: lighter">9a - 11p EST</h5>
+              <h5 slot="activator" style="font-weight: lighter">8a - 11p EST</h5>
               <span>New Summer Hours!</span>
             </v-tooltip>
           </v-layout>
@@ -22,7 +22,7 @@
             class="iframe-container"
             v-if="$moment().tz('America/New_York').isBetween(
               $moment().set({
-              hour: 8,
+              hour: 7,
               minute: 59
               }),
               $moment().set({
